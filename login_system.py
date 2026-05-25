@@ -20,7 +20,7 @@ class LoginSystem:
 
         If the user data is not loaded, it prints an error.
         On successful authentication, it calls the greet_user method.
-        On failure, it prints an invalid credentials message.
+        On authentication failure, it prints an invalid credentials message.
         """
         if self.user_data.empty:
             print("User data is not loaded. Cannot authenticate.")
